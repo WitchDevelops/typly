@@ -29,12 +29,15 @@ console.log(mapToRequiredFormat(exampleArray, namesMap));`;
         <code>toUpperCase()</code> method, because apart from capitalizing the
         names, we also need to map the diminutive versions to proper ones.
       </p>
-      <SyntaxHighlighter language="javascript" style={a11yDark}>
-        {codeString}
-      </SyntaxHighlighter>
-      <SyntaxHighlighter language="javascript" style={a11yDark}>
-        {consoleLog}
-      </SyntaxHighlighter>
+      <div className="max-w-full w-full">
+        <SyntaxHighlighter language="javascript" style={a11yDark}>
+          {codeString}
+        </SyntaxHighlighter>
+        <p>Result:</p>
+        <SyntaxHighlighter language="javascript" style={a11yDark}>
+          {consoleLog}
+        </SyntaxHighlighter>
+      </div>
     </>
   );
 }

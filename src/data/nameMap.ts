@@ -8,9 +8,13 @@ export const namesMap: nameMap = {
   jasieczek: "Jan",
   johny: "Jan",
   małgosia: "Małgorzata",
+  malgosia: 'Małgorzata',
   małgorzata: "Małgorzata",
+  malgorzata: "Małgorzata",
   małgorzatka: "Małgorzata",
+  malgorzatka: "Małgorzata",
   gośka: "Małgorzata",
+  goska: "Małgorzata",
   gocha: "Małgorzata",
   goszka: "Małgorzata",
 };

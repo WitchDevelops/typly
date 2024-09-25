@@ -36,7 +36,7 @@ console.log(mapToRequiredFormat(exampleArray, namesMap));`;
         <code>Person</code> and <code>nameMap</code>. This ensures that the
         input and output data are of the required type, for extra type safety.
       </p>
-      <div className="flex gap-4 items-center flex-col sm:flex-row">
+      <div className="flex gap-4 items-center flex-col sm:flex-row max-w-full w-full">
         <SyntaxHighlighter language="javascript" style={a11yDark}>
           {codeString}
         </SyntaxHighlighter>
