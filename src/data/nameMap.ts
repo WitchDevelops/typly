@@ -1,4 +1,4 @@
-export const namesMap: nameMap = {
+export const namesMap: NameMap = {
   jaś: "Jan",
   jas: "Jan",
   jan: "Jan",
@@ -8,7 +8,7 @@ export const namesMap: nameMap = {
   jasieczek: "Jan",
   johny: "Jan",
   małgosia: "Małgorzata",
-  malgosia: 'Małgorzata',
+  malgosia: "Małgorzata",
   małgorzata: "Małgorzata",
   malgorzata: "Małgorzata",
   małgorzatka: "Małgorzata",
@@ -19,7 +19,7 @@ export const namesMap: nameMap = {
   goszka: "Małgorzata",
 };
 
-export const namesRegex: nameMap = {
+export const namesRegex: NameMap = {
   "^(jaś|jas|jan|janek|jasiu|jasiek|johny)$": "Jan",
   "^(małgosia|małgorzata|małgorzatka|gośka|gocha|goszka)$": "Małgorzata",
 };
