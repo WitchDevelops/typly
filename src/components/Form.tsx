@@ -1,30 +1,33 @@
 "use client";
 import React, { useState } from "react";
 import { namesMap } from "@/data/nameMap";
-
+import { useForm } from "react-hook-form";
 
 export const NameMapper: React.FC = () => {
-  const [inputValue, setInputValue] = useState("");
   const [mappedName, setMappedName] = useState("");
+  const { register, handleSubmit } = useForm<{ name: string }>();
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    const mappedValue = namesMap[inputValue] || "Unknown";
+  const onSubmit = (data: { name: string }) => {
+    const mappedValue = namesMap[data.name] || "Unknown";
     setMappedName(mappedValue);
+    alert(`Result: ${mappedValue}`);
   };
 
   return (
     <div className="flex flex-col gap-4 items-center">
       <form
-        onSubmit={handleSubmit}
+        onSubmit={handleSubmit(onSubmit)}
         className="flex flex-col gap-4 w-full min-w-[300px]"
       >
-        <input
-          className="bg-slate-200 text-blue-900 text-xl p-2"
-          type="text"
-          value={inputValue}
-          onChange={(event) => setInputValue(event.target.value)}
-        />
+        <div>
+          <input
+            className="bg-slate-200 text-blue-900 text-xl p-2"
+            type="text"
+            {...register("name")}
+          />
+          <button>add more</button>
+        </div>
+
         <button
           className="bg-blue-700 p-2 rounded-full text-bold text-xl"
           type="submit"
