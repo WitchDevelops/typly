@@ -61,7 +61,7 @@ export const NameMapper: React.FC = () => {
         ))}
 
         <button
-          className="bg-amber-700 p-2 rounded-full text-bold text-xl disabled:bg-slate-700"
+          className="bg-amber-700 p-2 rounded-full text-bold text-xl disabled:bg-[#2B2B2B]"
           type="submit"
           disabled={isSubmitDisabled}
         >
