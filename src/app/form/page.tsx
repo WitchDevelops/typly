@@ -7,10 +7,10 @@ export default function Home() {
       <Header text="Lvl3: Form" />
       <p>
         In this version I have expanded the name map to allow for more versions
-        of the names "Jan" and "Małgorzata". You can type them in to see the
-        result. Available name versions: jaś, jas, jan, janek, jasiu, jasiek,
-        jasieczek, johny, małgosia, malgosia, małgorzata, malgorzata,
-        małgorzatka, malgorzatka, gośka, goska, gocha, goszka.
+        of the names &quot;Jan&quot; and &quot;Małgorzata&quot;. You can type
+        them in to see the result. Available name versions: jaś, jas, jan,
+        janek, jasiu, jasiek, jasieczek, johny, małgosia, malgosia, małgorzata,
+        malgorzata, małgorzatka, malgorzatka, gośka, goska, gocha, goszka.
       </p>
       <p>
         The main drawback of this approach in general is the need of defining

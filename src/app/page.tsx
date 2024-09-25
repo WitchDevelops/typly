@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { routes } from "@/data/routes";
-import { Fa1, Fa2, Fa3, Fa4 } from "react-icons/fa6";
 
 export default function Home() {
   return (
